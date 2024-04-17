@@ -28,17 +28,15 @@ To get started with Yaksha, you'll need to have Node.js and npm installed on you
 
 # Instructions
 
-## Installation
 
+## Start the development server:
 
-### Start the development server:
-
-## Using npm
+### Using npm
   ```bash
    npm install
    ```
 
-# Using Yarn
+### Using Yarn
   ```bash
    yarn install
   ```
