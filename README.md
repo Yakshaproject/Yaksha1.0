@@ -5,9 +5,7 @@ Yaksha is an interactive quiz and games application that leverages the Stellar n
 Features
 Quiz Games: Participate in a variety of quiz games and challenge your knowledge.
 Stellar Integration: Utilize the Stellar network for secure and fast in-app currency transactions.
-Leaderboards: Compete with friends and other players globally and climb the leaderboards.
 Rewards: Earn rewards in cryptocurrency for your performance in games.
-Cross-Platform: Accessible on various devices, providing a consistent gaming experience.
 Getting Started
 To get started with Yaksha, you'll need to have Node.js and npm installed on your system. Follow the steps below to set up the project locally.
 
