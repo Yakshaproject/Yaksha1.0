@@ -1,7 +1,3 @@
-### Yaksha 1.0
-## Yaksha: Quiz and Games App
-
-Yaksha is an interactive quiz and games application that leverages the Stellar network to provide a fun and engaging experience for users. Built with React and integrated with the Stellar SDK, Yaksha offers a se
 # Yaksha 1.0
 
 **Yaksha: Quiz and Games App**
