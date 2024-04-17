@@ -39,14 +39,17 @@ Step 1: Install Stellar SDK
 To use Stellar SDK, you need to install it via npm (Node Package Manager). Open your terminal, navigate to your project directory, and run:
 
 npm install --save stellar-sdk
+
 Step 2: Import Stellar SDK
 In the JavaScript file where you want to use the Stellar SDK, import it at the top of the file:
 
 const StellarSdk = require('stellar-sdk');
+
 Step 3: Set Up Server Connection
 To interact with the Stellar network, you need to connect to a Horizon server. You can connect to the public Horizon server or set up your own.
 
 const server = new StellarSdk.Server('https://horizon-testnet.stellar.org');
+
 Step 4: Create a Key Pair
 To create a new Stellar account, you need a key pair consisting of a public key and a secret key.
 
@@ -63,6 +66,7 @@ To create an account on the Stellar testnet, you can use the Friendbot service t
   const responseJSON = await response.json();
   console.log("Account created:", responseJSON);
 })();
+
 Step 6: Building and Submitting a Transaction
 To send a transaction, such as sending Lumens to another account, you need to build and sign the transaction before submitting it to the network.
 
@@ -89,16 +93,8 @@ To send a transaction, such as sending Lumens to another account, you need to bu
     console.error("Transaction failed:", error);
   }
 })();
-Step 7: Listen for Payments
-You can listen for payments to your account using streaming APIs.
 
-server.payments()
-  .forAccount(pair.publicKey())
-  .stream({
-    onmessage: function(payment) {
-      console.log("Payment received:", payment);
-    }
-  });
+
 Conclusion
 You have now integrated the Stellar SDK into your Node.js project. You can create accounts, submit transactions, and listen for payments on the Stellar network. Always remember to switch from the testnet to the public network for production applications by changing the Horizon server URL and the network passphrase.
 
@@ -113,25 +109,10 @@ Usage
 Once the application is running, you can:
 
 Sign up or log in to your account.
-Choose a quiz game to play.
 Answer questions and earn points.
-View your scores and rankings on the leaderboard.
-Redeem rewards using the Stellar network.
-Contributing
-Contributions to Yaksha are welcome! Please follow these steps to contribute:
 
-Fork the repository.
-Create a new branch for your feature (git checkout -b feature/AmazingFeature).
-Commit your changes (git commit -m 'Add some AmazingFeature').
-Push to the branch (git push origin feature/AmazingFeature).
-Open a pull request.
-License
-Distributed under the MIT License. See LICENSE for more information.
+
 
 Contact
 Project Link: https://github.com/daiwikmaheshwari/yaksha1.0
-Acknowledgments
-Stellar Development Foundation
-React
-Create React App
-Enjoy playing and learning with Yaksha, your go-to quiz and games app on the Stellar network!
+Enjoy playing and learning with Yaksha, your go-to quiz app on the Stellar network!
